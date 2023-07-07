@@ -71,6 +71,8 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
 
+          {/* this is mobile nav below */}
+          
           <div
             className={`${
               !toggle ? "hidden" : "flex"
