@@ -30,7 +30,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+        scrolled ? "bg-tertiary" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -42,9 +42,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Brady &nbsp;
+          <p className='text-white text-[26px] font-bold cursor-pointer flex '>
+            Okyo &nbsp;
             <span className='sm:block hidden'> | Software Developer</span>
           </p>
         </Link>
@@ -70,13 +69,11 @@ const Navbar = () => {
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
-
           {/* this is mobile nav below */}
-          
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-10 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px]`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
