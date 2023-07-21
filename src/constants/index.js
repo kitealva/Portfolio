@@ -4,25 +4,19 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
     redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
-    docker,
     meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
-    threejs,
+    python,
   } from "../assets";
   
   export const navLinks = [
@@ -77,10 +71,6 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
@@ -97,14 +87,6 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
@@ -113,9 +95,10 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "python",
+      icon: python,
     },
+    
   ];
   
   const experiences = [

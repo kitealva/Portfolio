@@ -121,7 +121,12 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className='flex-[0.50] bg-black p-8 rounded-2xl'
+      >
+        super test
+      </motion.div>
       
     </div>
   );
