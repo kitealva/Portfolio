@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { instagram} from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -65,11 +66,11 @@ const Contact = () => {
 
   return (
     <div
-      className={`l: flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`l: flex xl:flex-row flex-col-reverse gap-12 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.50] bg-black p-8 rounded-2xl'
+        className='flex-[0.45] bg-black p-12 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Questions/Inquires</p>
         <h3 className={styles.sectionHeadText}>Contact Me!</h3>
@@ -123,9 +124,11 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='flex-[0.50] bg-black p-8 rounded-2xl'
+        className='flex-[0.45] bg-black p-12 rounded-2xl'
       >
-        super test
+          <div
+          className="flex justify-center font-bold text-lg pb-1">Instagram</div>
+        <a href="https://www.instagram.com/bradenaalva/?hl=en"><img src={instagram} alt="instagram" /></a>
       </motion.div>
       
     </div>

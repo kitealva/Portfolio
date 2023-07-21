@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import instagram from "./instagram.png"
+import linkin from "./linkin.png"
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -19,6 +21,7 @@ import tailwind from "./tech/tailwind.png";
 import python from "./tech/python.png"
 
 
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -27,6 +30,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import ddart from "./ddart.png";
 
 export {
   backend,
@@ -53,4 +57,7 @@ export {
   jobit,
   tripguide,
   python,
+  instagram,
+  linkin,
+  ddart,
 };

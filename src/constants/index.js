@@ -17,6 +17,7 @@ import {
     jobit,
     tripguide,
     python,
+    ddart,
   } from "../assets";
   
   export const navLinks = [
@@ -44,11 +45,11 @@ import {
       icon: web,
     },
     {
-      title: "React Developer",
+      title: "React",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Backend Engineer",
       icon: backend,
     },
     {
@@ -170,7 +171,7 @@ import {
   
   const projects = [
     {
-      name: "Art",
+      name: "DD Art",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       tags: [
@@ -187,7 +188,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: ddart,
       source_code_link: "https://github.com/",
     },
     {
