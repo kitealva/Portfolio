@@ -18,6 +18,7 @@ import {
     tripguide,
     python,
     ddart,
+    devmountain,
   } from "../assets";
   
   export const navLinks = [
@@ -105,7 +106,8 @@ import {
   const experiences = [
     {
       title: "Software Developer",
-      company_name: "One",
+      company_name: "DevMountain Student Developer",
+      icon: devmountain,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [

@@ -8,6 +8,10 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import instagram from "./instagram.png"
 import linkin from "./linkin.png"
+import insta from "./insta.png"
+import linkedin from "./linkedin.png"
+import youtube from "./youtube.png"
+import twitter from "./twitter.png"
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -26,6 +30,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import devmountain from "./company/devmountain.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -60,4 +65,9 @@ export {
   instagram,
   linkin,
   ddart,
+  youtube,
+  insta,
+  linkedin,
+  twitter,
+  devmountain,
 };

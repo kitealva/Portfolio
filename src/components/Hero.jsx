@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 
 const Hero = () => {
@@ -18,13 +16,9 @@ const Hero = () => {
             Hello, I'm <span className='text-[#363535]'>Brady</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
-          </p>
-          <br/>
-          <div className={``}>
-            add stuff here
-          </div>
+            I am a Software Developer located in the <br className='sm:block hidden' />
+            Salt Lake City Metropolitan Area
+          </p>   
         </div>
       </div>
 
