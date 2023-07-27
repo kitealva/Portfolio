@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           <p className='text-white text-[26px] font-bold cursor-pointer flex '>
-            Okyo &nbsp;
+            Brady &nbsp;
             <span className='sm:block hidden'> | Software Developer</span>
           </p>
         </Link>

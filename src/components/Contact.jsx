@@ -66,7 +66,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`l: flex xl:flex-row flex-col-reverse gap-12 overflow-hidden`}
+      className={`l: flex xl:flex-row justify-between gap-12 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}

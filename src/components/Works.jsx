@@ -80,7 +80,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labom.
+         Here, I showcase a collection of innovative and challenging projects that I've undertaken as a passionate coder. Each project represents a unique journey, where I combined my problem-solving skills with creativity to build practical solutions. From web applications to data analysis and automation scripts, I've explored diverse domains to expand my knowledge and expertise.
         </motion.p>
       </div>
 

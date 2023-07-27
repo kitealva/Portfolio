@@ -12,6 +12,8 @@ import insta from "./insta.png"
 import linkedin from "./linkedin.png"
 import youtube from "./youtube.png"
 import twitter from "./twitter.png"
+import me from "./me.png"
+import walker from "./walker.png"
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -26,16 +28,15 @@ import python from "./tech/python.png"
 
 
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
 import devmountain from "./company/devmountain.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import ddart from "./ddart.png";
+import wbgames from "./wbgames.png";
+import portfolio from "./portfolio.png"
 
 export {
   backend,
@@ -54,10 +55,6 @@ export {
   reactjs,
   redux,
   tailwind,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
@@ -70,4 +67,8 @@ export {
   linkedin,
   twitter,
   devmountain,
+  me,
+  walker,
+  wbgames,
+  portfolio,
 };

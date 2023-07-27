@@ -50,7 +50,7 @@ const About = () => {
        I am a software engineer/developer located in Salt Lake City, Utah. I've developed skills in full-stack applications using the best up-to-date practices. My profession includes experience in meticulous, and creative environments. I thoroughly enjoy the "Why?" that comes with software engineering/developing and the lessons that can be learned from it!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-32 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

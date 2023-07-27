@@ -50,7 +50,7 @@ const Footer = () => {
           ))}
         </ul>
       <div className="container mx-auto text-center pt-8 text-lg">
-        <p>&copy; {new Date().getFullYear()} Okyo. All rights reserved</p>
+        <p>&copy; {new Date().getFullYear()} Brady. All rights reserved</p>
       </div>
     </footer>
     )
