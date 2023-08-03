@@ -66,11 +66,11 @@ const Contact = () => {
 
   return (
     <div
-      className={`l: flex xl:flex-row justify-between gap-12 overflow-hidden`}
+      className={`l: flex xl:flex-row justify-center overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.45] bg-black p-12 rounded-2xl'
+        className='flex-[0.45] bg-black p-12 rounded-l-2xl'
       >
         <p className={styles.sectionSubText}>Questions/Inquires</p>
         <h3 className={styles.sectionHeadText}>Contact Me!</h3>
@@ -124,13 +124,17 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='flex-[0.45] bg-black p-12 rounded-2xl'
-      >
+        className='flex-[0.45] bg-gray p-12 rounded-r-2xl'
+      >   
+        <div
+        className="flex flex-col pl-2">
           <div
-          className="flex justify-center font-bold text-lg pb-1">Instagram</div>
-        <a href="https://www.instagram.com/bradenaalva/?hl=en"><img src={instagram} alt="instagram" /></a>
+          className="flex font-bold text-lg ">Contact Information</div>
+          <p
+          className="flex font-light pt-2">For further inquires please reach out!</p>
+        
+      </div>
       </motion.div>
-      
     </div>
   );
 };
