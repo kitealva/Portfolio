@@ -8,7 +8,6 @@ module.exports = {
         primary: "#191b1c",
         secondary: "#D39B39",
         tertiary: "#1f2729",
-        gray: "#27272a",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -19,6 +18,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      
     },
   },
   plugins: [],

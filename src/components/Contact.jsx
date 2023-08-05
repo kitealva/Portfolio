@@ -5,7 +5,9 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { instagram } from "../assets";
+
+
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -33,21 +35,21 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_2jajddm',
+        'template_bfyahde',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Brady",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "kite.alva@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'NwzZOinBt7jL97FQs'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("I appreciate your message and will get back to you ASAP!");
 
           setForm({
             name: "",
@@ -59,14 +61,14 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Something went wrong. Please try again.");
         }
       );
   };
 
   return (
     <div
-      className={`l: flex xl:flex-row justify-center overflow-hidden`}
+      className={`l: flex xl:flex-row justify-center overflow-hidden caret-secondary`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -110,7 +112,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='Hello! I was wondering...'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none'
             />
           </label>
 
@@ -124,16 +126,10 @@ const Contact = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='flex-[0.45] bg-gray p-12 rounded-r-2xl'
+        className='flex-[0.45] bg-tertiary p-12 rounded-r-2xl'
       >   
-        <div
-        className="flex flex-col pl-2">
-          <div
-          className="flex font-bold text-lg ">Contact Information</div>
-          <p
-          className="flex font-light pt-2">For further inquires please reach out!</p>
-        
-      </div>
+          <iframe className="w-full h-full rounded"src="https://www.youtube.com/embed/cGCkADfTSvg" title="Python Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+         
       </motion.div>
     </div>
   );

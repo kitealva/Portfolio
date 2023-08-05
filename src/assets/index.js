@@ -14,6 +14,9 @@ import youtube from "./youtube.png"
 import twitter from "./twitter.png"
 import me from "./me.png"
 import walker from "./walker.png"
+import phone from "./phone.png"
+import email from "./email.png"
+import location from "./location.png"
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -71,4 +74,7 @@ export {
   walker,
   wbgames,
   portfolio,
+  phone,
+  location,
+  email,
 };
