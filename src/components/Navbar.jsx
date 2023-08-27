@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      }  w-full flex items-center py-6 fixed top-0 z-20 ${
         scrolled ? "bg-tertiary" : "bg-transparent"
       }`}
     >
@@ -62,38 +62,23 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
-          />
           {/* this is mobile nav below */}
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-10 black-gradient absolute top-[79px] right-0 h-screen`}
-          >
-            <ul className='list-none flexitems-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))}
-            </ul>
+          <div onClick={()=>setToggle(!toggle)} className='text-3xl absolute right-8 top-6 cursor-pointer sm:hidden'>
+          <ion-icon name={toggle ? 'close':'menu'}></ion-icon>
           </div>
-        </div>
+
+          <ul className={`md:hidden pb-6 absolute bg-primary z-[-1] left-0 w-full transition-all duration-500 ease-in pl-12 ${toggle ? 'top-20 ':'top-[-490px]'}`}>
+          {
+          navLinks.map((nav)=>(
+            <li key={nav.title} className='md:ml-8 text-xl md:my-0 my-7'>
+              <a href={`#${nav.id}`} className='text-secondary hover:text-white duration-500'>{nav.title}</a>
+            </li>
+          ))
+        }
+        
+      </ul>
       </div>
+      
     </nav>
   );
 };
