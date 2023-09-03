@@ -12,8 +12,6 @@ import {
     nodejs,
     git,
     figma,
-    jobit,
-    tripguide,
     python,
     ddart,
     devmountain,
@@ -21,6 +19,7 @@ import {
     walker,
     wbgames,
     portfolio,
+    ash,
   } from "../assets";
   
   export const navLinks = [
@@ -126,25 +125,6 @@ import {
         "I am currently an independent developer working via contract/project based work. I specialize in Portfolios, E-commerce, and any other web based development. If you are looking for a flexible, skilled, and creative developer I am your guy! To further any inquiries refer to the Contact form below!",
       ],
     },
-    // {
-    //   title: "Web Developer",
-    //   company_name: "Three",
-    //   iconBg: "#383E56",
-    //   date: "Jan 2022 - Jan 2023",
-    //   points: [
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //   ],
-    // },
-    // {
-    //   title: "Full stack Developer",
-    //   company_name: "Four",
-    //   icon: meta,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2023 - Present",
-    //   points: [
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    //   ],
-    // },
   ];
   
   const testimonials = [
@@ -153,16 +133,16 @@ import {
         "Brady is a great guy with a strong work ethic. Throughout my time knowing him we’ve worked on a few applications together and his communication skills were great. Brady is definitely someone you want on your team.",
       name: "Walker Hebert",
       designation: "Developer",
-      company: "Tidal Athletics",
+      company: " at Tidal Athletics",
       icon: walker,
     },
     {
       testimonial:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      name: "Joe",
-      designation: "COO",
-      company: "Some",
-      icon: "",
+        "Brady is an exceptional coder with a deep passion for programming. I have had the privilege of knowing Brady for 7 years and can attest to their outstanding skills and dedication to their craft.",
+      name: "Ashton",
+      designation: "Graphic Designer",
+      company: "",
+      icon: ash,
     },
     {
       testimonial:

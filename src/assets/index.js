@@ -4,19 +4,13 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
-import instagram from "./instagram.png"
-import linkin from "./linkin.png"
 import insta from "./insta.png"
 import linkedin from "./linkedin.png"
 import youtube from "./youtube.png"
 import twitter from "./twitter.png"
-import me from "./me.png"
 import walker from "./walker.png"
-import phone from "./phone.png"
-import email from "./email.png"
-import location from "./location.png"
+import me from "./me.png"
+import ash from "./ash.png"
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -34,9 +28,7 @@ import python from "./tech/python.png"
 
 import devmountain from "./company/devmountain.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
 import ddart from "./ddart.png";
 import wbgames from "./wbgames.png";
 import portfolio from "./portfolio.png"
@@ -47,8 +39,6 @@ export {
   mobile,
   web,
   github,
-  menu,
-  close,
   css,
   figma,
   git,
@@ -58,23 +48,16 @@ export {
   reactjs,
   redux,
   tailwind,
-  carrent,
-  jobit,
-  tripguide,
   python,
-  instagram,
-  linkin,
   ddart,
   youtube,
   insta,
   linkedin,
   twitter,
   devmountain,
-  me,
   walker,
   wbgames,
   portfolio,
-  phone,
-  location,
-  email,
+  me,
+  ash,
 };

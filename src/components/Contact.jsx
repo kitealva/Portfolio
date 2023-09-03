@@ -72,7 +72,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.45] bg-black p-12 rounded-l-2xl'
+        className='flex-[0.45] bg-black p-12 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Questions/Inquires</p>
         <h3 className={styles.sectionHeadText}>Contact Me!</h3>
@@ -123,13 +123,6 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='flex-[0.45] bg-tertiary p-12 rounded-r-2xl'
-      >   
-          <iframe className="w-full h-full rounded"src="https://www.youtube.com/embed/cGCkADfTSvg" title="Python Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-         
       </motion.div>
     </div>
   );
