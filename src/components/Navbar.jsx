@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
+
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -10,6 +11,26 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  let menuRef = useRef();
+  
+  useEffect(() => {
+    let handler = (e)=>{
+      if(!menuRef.current.contains(e.target)){
+        setToggle(false);
+        console.log(menuRef.current);
+      }      
+    };
+
+    document.addEventListener("mousedown", handler);
+    
+
+    return() =>{
+      document.removeEventListener("mousedown", handler);
+    }
+
+  });
+
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -19,11 +40,13 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-
+    
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
+
   }, []);
+
 
   return (
     <nav
@@ -63,9 +86,13 @@ const Navbar = () => {
         </ul>
 
           {/* this is mobile nav below */}
-          <div onClick={()=>setToggle(!toggle)} className='text-3xl absolute right-8 top-6 cursor-pointer sm:hidden'>
+
+          <div 
+          ref={menuRef}
+          onClick={()=>setToggle(!toggle)} className='text-3xl absolute right-8 top-6 cursor-pointer sm:hidden'>
           <ion-icon name={toggle ? 'close':'menu'}></ion-icon>
           </div>
+          
 
           <ul className={`md:hidden pb-6 absolute bg-primary z-[-1] left-0 w-full transition-all duration-500 ease-in pl-12 ${toggle ? 'top-20 ':'top-[-490px]'}`}>
           {

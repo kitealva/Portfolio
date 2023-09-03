@@ -28,7 +28,7 @@ const Footer = () => {
   }, []);
     return (
         
-        <footer className="bg-transparent text-white p-6 rounded-t-lg">
+        <footer className="text-white p-6 rounded-t-lg">
             <div className="flex justify-center gap-14"> 
                 <a href="https://www.instagram.com/bradenaalva/?hl=en"><img className="w-9 h-9" src={insta} alt="instagram"/></a>
                 <a href="https://twitter.com/kitealva"><img className="w-9 h-9" src={twitter} alt="twitter"/></a>
