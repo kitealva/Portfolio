@@ -94,7 +94,7 @@ const Navbar = () => {
           </div>
           
 
-          <ul className={`md:hidden pb-6 absolute bg-primary z-[-1] left-0 w-full transition-all duration-500 ease-in pl-12 ${toggle ? 'top-20 ':'top-[-490px]'}`}>
+          <ul className={`md:hidden pb-6 absolute bg-neutral-900 z-[-1] left-0 w-full transition-all duration-500 ease-in pl-12 ${toggle ? 'top-20 ':'top-[-490px]'}`}>
           {
           navLinks.map((nav)=>(
             <li key={nav.title} className='md:ml-8 text-xl md:my-0 my-7'>

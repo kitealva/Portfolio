@@ -11,6 +11,7 @@ import twitter from "./twitter.png"
 import walker from "./walker.png"
 import me from "./me.png"
 import ash from "./ash.png"
+import cody from "./cody.png"
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -60,4 +61,5 @@ export {
   portfolio,
   me,
   ash,
+  cody,
 };

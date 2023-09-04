@@ -20,6 +20,7 @@ import {
     wbgames,
     portfolio,
     ash,
+    cody,
   } from "../assets";
   
   export const navLinks = [
@@ -131,7 +132,7 @@ import {
     {
       testimonial:
         "Brady is a great guy with a strong work ethic. Throughout my time knowing him we’ve worked on a few applications together and his communication skills were great. Brady is definitely someone you want on your team.",
-      name: "Walker Hebert",
+      name: "Walker",
       designation: "Developer",
       company: " at Tidal Athletics",
       icon: walker,
@@ -146,11 +147,11 @@ import {
     },
     {
       testimonial:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      name: "Moe",
-      designation: "CTO",
-      company: "Rune",
-      image: "",
+        "Brady is an amazing developer and an even better person. He has a very rigorous work ethic and when he sets hit mind to something there isn't much stopping him. He has a passion or learning and bettering himself.",
+      name: "Cody",
+      designation: "Developer",
+      company: "",
+      icon: cody,
     },
   ];
   

@@ -1,9 +1,6 @@
 import React, { useEffect, useState} from "react";
-import { Link } from "react-router-dom";
-import { navLinks } from "../constants";
 
-import { motion } from "framer-motion";
-import { styles } from "../styles";
+import { navLinks } from "../constants";
 import { insta, twitter, linkedin, youtube } from "../assets";
 
 
@@ -28,7 +25,7 @@ const Footer = () => {
   }, []);
     return (
         
-        <footer className="text-white p-6 rounded-t-lg">
+        <footer className=" text-white p-6 rounded-t-lg">
             <div className="flex justify-center gap-14"> 
                 <a href="https://www.instagram.com/bradenaalva/?hl=en"><img className="w-9 h-9" src={insta} alt="instagram"/></a>
                 <a href="https://twitter.com/kitealva"><img className="w-9 h-9" src={twitter} alt="twitter"/></a>
@@ -36,7 +33,7 @@ const Footer = () => {
                 <a href="https://www.youtube.com/"><img className="w-9 h-9" src={youtube} alt="twitter"/></a>
             </div>
 
-      <ul className='list-none hidden sm:flex flex justify-center gap-16 pt-10'>
+      <ul className='list-none sm:flex flex justify-center gap-16 pt-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
