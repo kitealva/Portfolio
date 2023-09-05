@@ -33,7 +33,7 @@ const Footer = () => {
                 <a href="https://www.youtube.com/"><img className="w-9 h-9" src={youtube} alt="twitter"/></a>
             </div>
 
-      <ul className='list-none sm:flex flex justify-center gap-16 pt-10'>
+      <ul className='list-none sm: hidden justify-center gap-16 pt-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}

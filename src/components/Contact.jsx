@@ -72,7 +72,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.45] bg-black p-12 rounded-2xl'
+        className='rounded-2xl flex-[0.45] bg-black p-12'
       >
         <p className={styles.sectionSubText}>Questions/Inquires</p>
         <h3 className={styles.sectionHeadText}>Contact Me!</h3>
@@ -94,13 +94,13 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Email</span>
+            <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="email@gmail.com"
+              placeholder="youremail@gmail.com"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

@@ -21,6 +21,7 @@ import {
     portfolio,
     ash,
     cody,
+    compass,
   } from "../assets";
   
   export const navLinks = [
@@ -229,7 +230,7 @@ import {
         },
       ],
       image: portfolio,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/kitealva/Portfolio",
     },
   ];
   

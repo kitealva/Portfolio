@@ -12,6 +12,7 @@ import walker from "./walker.png"
 import me from "./me.png"
 import ash from "./ash.png"
 import cody from "./cody.png"
+import compass from "./compass.png"
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -35,6 +36,7 @@ import wbgames from "./wbgames.png";
 import portfolio from "./portfolio.png"
 
 export {
+  compass,
   backend,
   creator,
   mobile,
